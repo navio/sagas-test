@@ -1,11 +1,11 @@
 import { takeAll, takeEvery } from "redux-saga";
 import { FetchCardsEvents } from "./types";
-import debug from "debug";
-const log = debug("saga:fetch");
+// import debug from "debug";
+// const log = debug("saga:fetch");
 
 function* getNewDeck() {
   // Make an API Request
-  log("requesting api");
+  // log("requesting api");
 }
 
 function* listenForNewDeck() {
