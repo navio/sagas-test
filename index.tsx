@@ -9,7 +9,7 @@ import "./style.css";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootStore, applyMiddleware(sagaMiddleware));
-// sagaMiddleware.apply(rootSaga);
+sagaMiddleware.run(rootSaga);
 
 interface AppProps {}
 interface AppState {

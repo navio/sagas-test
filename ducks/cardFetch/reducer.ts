@@ -12,8 +12,6 @@ export default (
   action: FetchCardsTypes
 ) => {
   switch (action.type) {
-    case FetchCardsEvents.getNewDeck:
-      return { ...state, deckId: "hello" };
     case FetchCardsEvents.storeDeckId:
       return { ...state, deckId: action.payload };
     default:
